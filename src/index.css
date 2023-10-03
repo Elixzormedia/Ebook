@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Poppins:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  background: url("/images/bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: "Inter", sans-serif;
+}
+
+section {
+  max-width: 100vw;
+  overflow-x: hidden;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.btn {
+  @apply p-2 md:p-2.5;
+  @apply bg-gradient-to-r from-[#8b2526] to-[#bf2324] hover:bg-gradient-to-l;
+  border-radius: 13px;
+  font-family: "Poppins", sans-serif;
+  padding-inline: 20px;
+  color: white;
+  /* background: linear-gradient(94deg, #8b2526 1.08%, #bf2324 100%); */
+  background-size: 100% 100%;
+  -moz-transition: ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-size: 200% 150%;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.headline {
+  font-weight: bold;
+  text-align: center;
+}
+
+.subheadline {
+  font-weight: 400;
+  text-align: center;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
